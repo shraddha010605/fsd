@@ -1,0 +1,436 @@
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        /* Navbar */
+        .navbar {
+            height: 15vh;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: rgb(255, 255, 255);
+            margin-top: -20px;
+
+        }
+
+        .navbar .logo img {
+            padding-top: 10px;
+            height: 80%;
+            width: 150px;
+            color: rgb(138, 109, 80);
+        }
+
+        .navbar nav {
+            height: 100%;
+            width: 1000px;
+            /* border: 2px solid black; */
+            text-align: start;
+            padding-top: 20px;
+            font-weight: 10px;
+            font-size: small;
+        }
+
+        .navbar nav a {
+            margin: 0 8px;
+            text-decoration: none;
+            color: #333;
+            color: rgb(177, 121, 101);
+
+        }
+
+        .navbar nav a:hover {
+            text-decoration: underline;
+            color: rgb(177, 121, 101);
+        }
+
+        .navbar .cart-icon {
+            font-size: 24px;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 120vh;
+            width: 100vw;
+            text-align: center;
+            /* padding: 10px 20px; */
+            background-color: #f0f0f0;
+            margin-top: 0;
+            position: relative;
+
+        }
+
+        .hero video {
+            height: 120vh;
+            width: 100vw;
+            object-fit: cover;
+        }
+
+        .hero div {
+            position: relative;
+            bottom: 400px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: white;
+            font-family: "Mr Dafoe", cursive;
+            font-weight: 400;
+            font-style: normal;
+
+        }
+
+        .hero h4 {
+            color: white;
+        }
+
+
+        .hero .order-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: white;
+            color: #333;
+            border-radius: 30px;
+            width: 190px;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+        }
+        .hero .order-button:hover {
+            transform: scale(1.1);
+
+        }
+
+        /* New Arrivals Section */
+        .new-arrivals {
+            padding: 50px 20px;
+            text-align: left;
+        }
+
+        .new-arrivals h2 {
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 20px;
+            font-weight: lighter;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+
+            /* padding: 20px; */
+            width: 200px;
+            height: 300px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+
+
+        }
+
+        .product img:hover {
+            transform: scale(1.1);
+
+        }
+
+        .product p {
+            display: flex;
+        }
+
+        .product p {
+            margin: 5px 0;
+            color: rgb(177, 121, 101);
+            font-size: small;
+        }
+
+        .product p:hover {
+            text-decoration: underline;
+            color: rgb(177, 121, 101);
+        }
+
+        .banners {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            /* Explicitly reset any margin */
+            padding: 0;
+            /* Remove any padding */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .banners img {
+            height: 85%;
+            width: 90%;
+            border-radius: 10px;
+
+        }
+
+        .parts {
+            height: 100vh;
+            width: 90vw;
+            display: flex;
+            margin: 57px;
+            border-radius: 10px;
+            color: rgb(108, 76, 50);
+
+
+
+        }
+
+        .parts #people img {
+            height: 100%;
+            width: 500px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+
+        .parts #text {
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            background-color: rgb(255, 247, 210);
+
+
+            padding-left: 40px;
+            text-align: left;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: light;
+            font-style: normal;
+
+        }
+
+        .parts #text h1 {
+            font-size: 30px;
+            /* font-weight: bolder; */
+            /* font-family: ; */
+            margin-right: 30px;
+        }
+
+        .parts #text p {
+            font-size: small;
+            font-weight: 90px;
+            /* border: 2px solid black; */
+            margin-right: 30px;
+        }
+
+        .parts #text button {
+            height: 35px;
+            width: 200px;
+            background-color: rgb(108, 76, 50);
+            color: white;
+            border: none;
+            border-radius: 20px;
+        }
+        .parts #text button:hover {
+            transform: scale(1.1);
+
+        }
+
+        .donation {
+            width: 80vw;
+            /* Set to full viewport width */
+            height: 90vh;
+            /* Set to full viewport height */
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+        }
+
+        .donation img {
+            height: 200px;
+            width: 200px;
+            margin: 0;
+            /* Remove any margin */
+            margin-bottom: 20px;
+            object-fit: cover;
+            /* If you want the image to scale correctly */
+        }
+
+        .donation button {
+            height: 35px;
+            width: 200px;
+            background-color: rgb(108, 76, 50);
+            color: white;
+            border: none;
+            border-radius: 20px;
+
+            margin-top: 30px;
+        }
+        .donation button:hover {
+            transform: scale(1.1);
+
+        }
+        .donation div {
+            height: 50%;
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .donation div h2 {
+            font-size: 18px;
+        }
+
+        .donation div h4 {
+            font-weight: lighter;
+            font-size: 15px;
+            color: rgba(108, 76, 50, 0.705);
+
+        }
+
+        .donation #text {
+            color: rgb(108, 76, 50);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        footer {
+            height: 100vh;
+            width: 100%;
+            /* border: 2px solid red; */
+            background-color: rgb(108, 76, 50);
+        }
+
+        footer form {
+            height: 40%;
+            width: 100%;
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        footer form h1 {
+            color: white;
+        }
+
+        footer form h5 {
+            color: rgb(218, 202, 164);
+            font-weight: lighter;
+        }
+
+        footer form input {
+            height: 40px;
+            width: 300px;
+            border-radius: 30px;
+            padding-left: 20px;
+            background-color: transparent;
+            border: 1px solid rgb(184, 169, 156);
+        }
+
+        footer form input::placeholder {
+            color: rgb(184, 169, 156);
+        }
+
+        footer section {
+            height: 70%;
+            width: 100%;
+            /* border: 2px solid blue; */
+            display: flex;
+            font-size: small;
+            padding-right: 100px;
+        }
+
+        footer section div {
+            height: 100%;
+            width: 25%;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 20px;
+            padding-left: 50px;
+            padding-top: 20px;
+            color: white;
+        }
+
+        footer section div a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer section div a:hover {
+            text-decoration: underline;
+        }
+
+        footer section div img {
+            height: 30%;
+            width: 70%;
+            margin-top: 20px;
+
+        }
+
+        #f2 {
+            height: 20vh;
+            width: 100vw;
+            background-color: rgb(108, 76, 50);
+        }
+
+        #f2 article {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        #f2 article h6 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        #f2 article a {
+            color: rgb(218, 210, 204);
+            text-decoration: none;
+        }
